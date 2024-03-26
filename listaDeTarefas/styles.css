@@ -1,0 +1,111 @@
+body {
+	background-color: #000000;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	height: 100vh;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+}
+
+header {
+	background-color: #343434;
+	color: #D9D8D9;
+	text-align: center;
+	
+}
+
+main {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 450px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: #2e2e2f;
+	padding: 55px;
+	border-radius: 12px;
+}
+
+.topo {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 35px;
+}
+
+.topo input {
+	width: 350px;
+	padding: 15px;
+	border-radius: 15px;
+	border: 1px solid #2e2e2f;
+	background-color: #3b3b3d;
+	color: #fff;
+	outline: none;
+	font-size: 1.2rem;
+}
+
+.topo button {
+	width: 45px;
+	border-radius: 12px;
+	border: 1px solid #2e2e2f;
+	background: #3b3b3d;
+	color: #fff;
+	outline: none;
+}
+
+.topo button:hover {
+	background: #4e4e4f;
+	cursor: pointer;
+}
+
+.editar,
+.excluir {
+	border-radius: 20px;
+	border: 1px solid #2e2e2f;
+	width: 38px;
+	height: 38px;
+	margin-right: 8px;
+	cursor: pointer;
+	background: #3b3b3d;
+	color: #fff;
+	outline: none;
+}
+
+.editar:hover {
+	background: #4e4e4f;
+}
+
+
+.excluir:hover {
+	background: #4e4e4f;
+}
+
+
+.listaTarefas{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.listaTarefas li{
+	padding: 20px;
+	background: #3b3b3d;
+	border-radius: 12px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	color: #fff;
+}
+.checked {
+	text-decoration: line-through;
+	color: gray;
+}
+.task-container {
+	display: flex;
+	align-items: center;
+}
+.task-buttons {
+	margin-left: auto;
+}
+span{
+	font-size: 1.4rem;
+}

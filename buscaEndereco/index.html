@@ -4,16 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <link rel="stylesheet" type="text/css" href="node_modules/@fortawesome/fontawesome-free/css/all.css"/>
     <title>BuscaCep</title>
 </head>
 <body>
     <main class="container">
         <h1>Consulta de Endereços</h1>
-        <label for="cep">Digite Cep:</label>
-        <input type="text" id="cep"/>
-        <button>Consultar</button>
-        <div id="resutados">
+        <label for="cep">Digite o Cep:</label>
+        <input type="text" id="cep" maxlength="8"/>
+        <button id="consultar">Consultar</button>
+        <div id="resultados">
+            <!--AJAX-->
+        </div>
         </div>
     </main>
+
+    <button id="modo-noturno" class="lampada">
+        <i class="fa-regular fa-lightbulb"></i>    
+    </button>
+    
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/js-cookie/dist/js.cookie.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

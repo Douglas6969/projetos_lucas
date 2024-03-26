@@ -1,3 +1,6 @@
+#resultados img{
+    width: 350px;
+}
 body{
     margin: 0;
     display: flex;
@@ -6,18 +9,101 @@ body{
     height: 100vh;
     background-color: #4069c9;
     color: #e9e9e9;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container{
-    text-align: center;
-    background-color: #012269d5;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px #000000a9;
+
+   
+        text-align: center;
+        background-color: #3c3c3cd5;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px #000000a9;
+        
+    
+        border: 5px solid transparent;
+        border-radius: 10px;
+        animation: animateBorder 4s infinite linear alternate;
+    
+} 
+    @keyframes animateBorder {
+        0% {
+            border-top-color: rgb(255, 0, 0);
+            border-right-color: rgb(0, 255, 0);
+            border-bottom-color: rgb(0, 0, 255);
+            border-left-color: rgb(255, 255, 0);
+        }
+    
+        25% {
+            border-top-color: rgb(0, 255, 0);
+            border-right-color: rgb(0, 0, 255);
+            border-bottom-color: rgb(255, 255, 0);
+            border-left-color: rgb(255, 0, 0);
+        }
+    
+        50% {
+            border-top-color: rgb(0, 0, 255);
+            border-right-color: rgb(255, 255, 0);
+            border-bottom-color: rgb(255, 0, 0);
+            border-left-color: rgb(0, 255, 0);
+        }
+    
+        75% {
+            border-top-color: rgb(255, 255, 0);
+            border-right-color: rgb(255, 0, 0);
+            border-bottom-color: rgb(0, 255, 0);
+            border-left-color: rgb(0, 0, 255);
+        }
+    
+        100% {
+            border-top-color: rgb(255, 0, 0);
+            border-right-color: rgb(0, 255, 0);
+            border-bottom-color: rgb(0, 0, 255);
+            border-left-color: rgb(255, 255, 0);
+        }
+    }
+
+
+
+#resultados{
+    margin-top: 20px;
+    align-items: center;
+    padding: 10px;
 }
 
-.container input{
-    background-color: #746ce44f;
-    box-shadow: 0px 0px 5px #ffffff57;
-    color: #ffffffe1;
+#resultados .img{
+    background-color: #000000a9;
+}
+
+.mensagemErro{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    color: red;
+}
+
+#modo-noturno{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 2em;
+    color: #000;
+}
+
+#modo-noturno :hover{
+    color: #ffffffbe;
+}
+
+.dark-mode{
+    background-color: #030e29;
+}
+
+.dark-container{
+    background-color: #191a50;
+    color: #000;
+    font-weight: bold;
 }
