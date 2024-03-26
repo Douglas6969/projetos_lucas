@@ -1,8 +1,16 @@
 body{
   text-align: center;
+  margin: 0;
 }
+
 .modo-negro{
   background-color: rgb(19, 18, 18);
   color: #fff;
+}
+.main{
+  height: 100vh;
+}
+.main{
+  transition: all 500ms;
 }
 
